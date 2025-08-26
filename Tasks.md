@@ -56,6 +56,15 @@
   - [x] Updated Coverage.md to reflect Step 5 completion
 
 
+## Architecture Decision Records (Step 7) - **COMPLETED** 2025-01-27T17:05:00Z
+- [x] **STEP 7 COMPLETION**: Created Architectural Decision Records for component categorization and disconnected removal strategy - **COMPLETED** 2025-01-27T17:05:00Z
+  - [x] Created [[docs/architecture/adr-0001-component-categorization]] - Three-tier categorization methodology with quantitative/qualitative criteria
+  - [x] Created [[docs/architecture/adr-0002-disconnected-removal]] - Systematic removal strategy for 45 disconnected components
+  - [x] Added Architecture Decisions sections to [[../Twitch Docs/Index]] and [[../Repos Docs/Index]] with proper backlinks
+  - [x] Updated [[AGENTS]] with new Architecture Decision Policies section adopting both ADRs as canonical policy
+  - [x] Established enforcement requirements: quarterly category reassessment and mandatory removal audit trail
+  - [x] Documented business value: decision transparency, process standardization, risk mitigation, resource optimization
+
 ## Repository Inventory
 - [x] **REPO INVENTORY**: Complete component inventory across 26 repositories - **COMPLETED** 2025-08-26T14:02:00Z
   - [x] Successfully inventoried 38 components across 26 repositories
@@ -97,6 +106,37 @@
 - **Observability**: Assumed OpenTelemetry/Prometheus integration for production services
 
 ## Repository Documentation TODOs
+
+- [ ] **Document whiply_project submodules** - **PARTIAL** 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_MCWhitelist]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_chat_bot]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_chat_gui]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_destiny_awards]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_dgg_place]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_dggiscord]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_libstiny]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_overrustlelogs]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_rdestinybot]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_rdestinycss]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_rust_metricbeat]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_twitch_subscriber_sync]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_EmoteMaker]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_Rustla2]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_browser_extension]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_chat]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_chat_gui]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_chat_parser]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_dggchat]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_mentions]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_modbot]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_overrustlelogs]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_protobuf]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_streaming]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_strims]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_strims_android]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_tsgg]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_twemoji_colr]] - 2025-01-27T18:30:00Z
+  - [ ] [[../Repos Docs/whiply_project/Components/memelabs_url_extract]] - 2025-01-27T18:30:00Z
 
 ### High Priority Repository Details (Missing Information)
 - [ ] **chat-parser-rust**: Add detailed API documentation for lexer and parser modules → [[../Repos Docs/chat-parser-rust/Coverage]]
@@ -371,6 +411,35 @@
 - [ ] Document overrustlelogs-rust → [[Repos Docs/overrustlelogs-rust/Coverage#overrustlelogs]]
 - [ ] Document whispers-rust → [[Repos Docs/whispers-rust/Coverage#whispers]]
 - [ ] Document dgg-chatbot-javascript → [[Repos Docs/dgg-chatbot-javascript/Coverage#destinygg-chat-bot]]
+
+## Step 9 Analysis Tasks (Generated 2025-01-27)
+
+### Component Categorization Refinement TODOs
+- [ ] Validate Essential component classifications against updated dependency matrix → [[../Twitch Docs/Coverage]]
+- [ ] Review Semi-Essential category assignments for developer tools and monitoring services → [[../Twitch Docs/Coverage]]
+- [ ] Audit Non-Essential team directory classifications for potential reclassification → [[../Twitch Docs/Coverage]]
+- [ ] Update Component Cards with enhanced category information per ADR-0001 → [[Components/]]
+- [ ] Implement quarterly category reassessment process per ADR-0001 methodology → [[../Warp/docs/architecture/adr-0001-component-categorization]]
+
+### Disconnected Component Removal TODOs
+- [ ] Execute Phase 1 automated flagging for 45 disconnected components → [[../Warp/docs/architecture/adr-0002-disconnected-removal]]
+- [ ] Complete stakeholder notification for disconnected status components → [[../Twitch Docs/Coverage]]
+- [ ] Process validation and appeals for flagged disconnected components → [[../Twitch Docs/Coverage]]
+- [ ] Remove confirmed disconnected repository metadata and build artifacts → [[../Twitch Docs/Coverage]]
+- [ ] Archive disconnected component documentation per ADR-0002 process → [[../Warp/docs/architecture/adr-0002-disconnected-removal]]
+
+### Architecture Decision Implementation TODOs
+- [ ] Update all Coverage.md tables with category column per ADR-0001 → [[../Twitch Docs/Coverage]]
+- [ ] Enhance Component Card YAML frontmatter with category fields → [[Components/]]
+- [ ] Create category-based filtering and reporting views for Obsidian → [[../Twitch Docs/Index]]
+- [ ] Implement automated category validation scripts per ADR-0001 → [[../Warp/docs/architecture/]]
+- [ ] Generate category-based reporting dashboards for stakeholder review → [[../Twitch Docs/Index]]
+
+### Index Enhancement TODOs
+- [ ] Maintain Component Categories section accuracy in Index.md → [[../Twitch Docs/Index]]
+- [ ] Update category statistics and component counts in Index navigation → [[../Twitch Docs/Index]]
+- [ ] Ensure proper backlinks between Index categorization and Coverage tracking → [[../Twitch Docs/Coverage]]
+- [ ] Review and update architecture diagrams for category alignment → [[../Twitch Docs/Index]]
 
 ## Documentation TODOs (Discovered 2025-01-27)
 

@@ -119,4 +119,4 @@ Examples: individual team directories, experimental features, utility scripts
 - Future ADRs on resource allocation and monitoring strategies
 
 ## Links
-[[../Coverage]] | [[../../Tasks]] | [[../../AGENTS]] | [[adr-0002-disconnected-removal]]
+[[../../Twitch Docs/Index]] | [[../../Repos Docs/Index]] | [[../../Tasks]] | [[../../AGENTS]] | [[adr-0002-disconnected-removal]]

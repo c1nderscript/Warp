@@ -49,5 +49,21 @@ This document serves as the canonical policy for documenting `/home/cinder/Docum
 - Tasks.md integration for TODO management
 - Changelog.md timestamped entries for all updates
 
+## Architecture Decision Policies
+
+The following ADRs are adopted as canonical policy and must be followed in all documentation and maintenance workflows:
+
+- [[docs/architecture/adr-0001-component-categorization]]: Establishes the three-tier categorization system (Essential, Semi-Essential, Non-Essential) and the methodology/criteria for classification. All Coverage tables and Component Cards must include and maintain the category field.
+- [[docs/architecture/adr-0002-disconnected-removal]]: Defines the removal strategy for disconnected components, including automated flagging, 30-day grace period, validation, execution, and archival requirements. All removals must be logged in [[Changelog]] and tracked via [[Tasks]].
+
+### Enforcement (Updated 2025-01-27)
+- **Quarterly Reassessment**: Mandatory category review per ADR-0001 methodology using updated dependency matrix analysis
+- **Removal Process**: Full ADR-0002 workflow enforcement with automated flagging, 30-day grace period, and archive creation
+- **Category Validation**: All Coverage.md tables must maintain category column with Essential/Semi-Essential/Non-Essential classification
+- **Component Card Enhancement**: YAML frontmatter category fields mandatory per ADR-0001 requirements
+- **Index Integration**: Component Categories sections in both Twitch Docs and Repos Docs indexes must be kept current
+- **Documentation Cross-Reference**: Obsidian backlinks to ADRs maintained from both index files and component cards
+- **Task Generation**: Analysis-generated tasks must be systematically added to Tasks.md with proper [[Coverage]] backlinks
+
 ### Links
-[[Coverage]] | [[../Twitch Docs/Index]] | [[../Repos Docs/Index]] | [[Tasks]] | [[Changelog]]
+[[Coverage]] | [[../Twitch Docs/Index]] | [[../Repos Docs/Index]] | [[Tasks]] | [[Changelog]] | [[docs/architecture/adr-0001-component-categorization]] | [[docs/architecture/adr-0002-disconnected-removal]]
