@@ -1,0 +1,276 @@
+{
+  "scan_timestamp": "2025-01-26T20:00:00Z",
+  "total_repos": 26,
+  "repositories": [
+    {
+      "name": "chat-gui-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/chat-gui-rust",
+      "languages": [
+        "TypeScript",
+        "Rust"
+      ],
+      "package_manager_files": [
+        "package.json",
+        "Cargo.toml"
+      ],
+      "description": "Current version: 2.1.35"
+    },
+    {
+      "name": "chat-parser-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/chat-parser-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "Rust-based chat parser library. The legacy Go implementation has been retired; see `archive/go/AGENTS.md` or tag `v0.7.3` for historical reference. See [plan.md](plan.md) for the migration strategy, [toaster.md](toaster.md) for the architecture, [docs/README.md](docs/README.md) for the documentation index, and [`docs/rust/chat-parser/README.md`](docs/rust/chat-parser/README.md) for crate and module guides."
+    },
+    {
+      "name": "chat-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/chat-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "This repository hosts a chat service implemented in Rust. The code lives in `src/` with tests in `tests/`."
+    },
+    {
+      "name": "chatrooms-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/chatrooms-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "Chatrooms is a Rust gRPC server that supports the chatroom feature on Twitch. The service handles the chatrooms specific logic and uses [MaaP](https://git-aws.internal.justin.tv/chat/zuma/blob/master/app/api/maap_models.go) to store rooms and messages."
+    },
+    {
+      "name": "classifier-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/classifier-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "Backend service that classifies Twitch whisper messages for moderation purposes."
+    },
+    {
+      "name": "dggchat-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/dggchat-rust",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "Migration repository for the Destiny.gg chat client. The project houses a Rust crate; the legacy Go implementation has been removed from the codebase. The Rust `Session` now reconnects automatically with an exponential backoff."
+    },
+    {
+      "name": "modbot-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/modbot-rust",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "Modbot is an automated moderation bot implemented in Rust. Source code lives under `rust/` and includes asynchronous API and bot logic via `tokio` and `reqwest`. See `plan.md` for goals and `toaster.md` for architecture."
+    },
+    {
+      "name": "overrustlelogs-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/overrustlelogs-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "A chat log suite for [Destiny.gg](https://www.destiny.gg/bigscreen) and [Twitch.tv](http://twitch.tv)."
+    },
+    {
+      "name": "protobuf-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/protobuf-rust",
+      "languages": [
+        "TypeScript"
+      ],
+      "package_manager_files": [
+        "package.json"
+      ],
+      "description": "Repository guidelines live in `AGENTS.md`."
+    },
+    {
+      "name": "psub-broker-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/psub-broker-rust",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "p# pubsub-broker"
+    },
+    {
+      "name": "pubsub-control-edge",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/pubsub-control-edge",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "Pubsub Edge manages persistent connections to first- and third-party clients to receive realtime updates sent from Twitch services. See the [Pubsub Docs](https://git.xarth.tv/twitch/docs/tree/master/pubsub) for more details."
+    },
+    {
+      "name": "pubsub-control-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/pubsub-control-rust",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "Business logic and API for generic pubsub"
+    },
+    {
+      "name": "pubsub-load-generator-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/pubsub-load-generator-rust",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "Generates configurable production-scale load on Pubsub Darklaunch."
+    },
+    {
+      "name": "pubsub-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/pubsub-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "Current release: 0.8.1. See [CHANGELOG](CHANGELOG.md) for history, [plan](plan.md) for goals, [toaster](toaster.md) for architecture, and [docs](docs/README.md) for module documentation."
+    },
+    {
+      "name": "tmi-http-edge-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/tmi-http-edge-rust",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "Nice error type that holds an error and a status code."
+    },
+    {
+      "name": "tsgg-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/tsgg-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "A terminal chat client rewritten in Rust. Current version: `1.0.5`."
+    },
+    {
+      "name": "uri-extract",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/uri-extract",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "Root workspace for the `uri-extract` Rust implementation. A functional setup"
+    },
+    {
+      "name": "whispers-rust",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Rust Component Repos/whispers-rust",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "Whispers is a RESTful web service for persistence of conversation messages."
+    },
+    {
+      "name": "browser-extension-typescript",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/browser-extension-typescript",
+      "languages": [
+        "TypeScript"
+      ],
+      "package_manager_files": [
+        "package.json"
+      ],
+      "description": "Browser extension for displaying a user's favorite channels and live streams on Strims.gg."
+    },
+    {
+      "name": "chat-gui-typescript",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/chat-gui-typescript",
+      "languages": [
+        "TypeScript"
+      ],
+      "package_manager_files": [
+        "package.json"
+      ],
+      "description": "- Node.js"
+    },
+    {
+      "name": "dgg-chatbot-javascript",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/dgg-chatbot-javascript",
+      "languages": [
+        "TypeScript"
+      ],
+      "package_manager_files": [
+        "package.json"
+      ],
+      "description": "See [CHANGELOG](CHANGELOG.md) for version history, [toaster](toaster.md) for architecture, [AGENTS](AGENTS.md) for contribution guidelines, [docs](docs/README.md) for component guides, and [plan](plan.md) for goals and risks. Source lives in `lib/` and `index.ts` as TypeScript and compiles to `dist/`. Chat utility helpers under `lib/chat-utils` offer typed parsing and formatting utilities, message routing classes in `lib/message-routing` handle typed chat and command dispatch, command helpers in `lib/commands` expose typed execution context and output structures, and command implementations in `lib/commands/implementations` are authored in TypeScript. Metrics reporters in `lib/services/metrics` provide a shared `MetricReporter` interface and typed metric names."
+    },
+    {
+      "name": "dgg-overrustle",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/dgg-overrustle",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "Rust application ingesting and serving DestinyGG chat logs. The project was completely rewritten from Go to Rust, and active development now lives in a Cargo workspace defined at the repository root (`Cargo.toml`) with crates under `rust/` and `tool/`. Go tooling has been removed; the legacy `overrustlelogs/` directory is retained only for historical reference. Rust maintenance utilities reside in `tool/`. The `common` crate now also defines a reusable `Message` struct with Avro serialization, a `new_message_from_common` helper for Avro record creation, nick list search utilities for chat events, and an async `Twitch` client for managing Twitch channels. `overrustlelogs` now renders markup with Askama templates in `rust/overrustlelogs/templates`, including table rendering examples."
+    },
+    {
+      "name": "dgg-subscriber-sync",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/dgg-subscriber-sync",
+      "languages": [
+        "Rust"
+      ],
+      "package_manager_files": [
+        "Cargo.toml"
+      ],
+      "description": "Rust-based service for synchronizing Twitch subscribers with DestinyGG. A companion crate `twitchpubsub` offers both an HTTP API client for forwarding subscription data and a WebSocket client for consuming Twitch PubSub events. The `twitchscrape` crate polls Twitch APIs, handles pagination and OAuth token refresh, and diffs subscribers against DestinyGG."
+    },
+    {
+      "name": "mentions-typescript",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/mentions-typescript",
+      "languages": [
+        "Unknown"
+      ],
+      "package_manager_files": [],
+      "description": "This repository houses language-specific implementations of the mentions bot."
+    },
+    {
+      "name": "pubsub-typescript-client",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/pubsub-typescript-client",
+      "languages": [
+        "TypeScript"
+      ],
+      "package_manager_files": [
+        "package.json"
+      ],
+      "description": "This is the library to integrate with our new PubSub service."
+    },
+    {
+      "name": "strims-typescript",
+      "path": "/home/cinder/Documents/repos/Surrentumlabs/Typescript Component Repos/strims-typescript",
+      "languages": [
+        "TypeScript"
+      ],
+      "package_manager_files": [
+        "package.json"
+      ],
+      "description": "<br />"
+    }
+  ]
+}
