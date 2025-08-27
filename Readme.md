@@ -7,7 +7,7 @@ This repository contains the control files for documenting both the Twitch file 
 - **[[../Twitch Docs/Index]]** - Global map and navigation for all Twitch storage documentation
   - ⭐ **New Feature**: See **Component Categories** section with 4-tier classification (🔴Essential, 🟡Semi-Essential, 🟢Non-Essential, ⚫Disconnected)
 - **[[../Repos Docs/Index]]** - Repository documentation index for all Surrentumlabs repos  
-- **[[Coverage]]** - Comprehensive tracking ledger with category classifications for all documented components
+- **[[../Twitch Docs/Coverage]]** - Comprehensive tracking ledger with category classifications for all documented components
 
 ## Control Files
 
@@ -29,7 +29,7 @@ The documentation now includes systematic component categorization following ADR
 - **🟢 Non-Essential Components** (43): Team directories, legacy systems, experimental projects
 - **⚫ Disconnected Components** (43): Utility files, configuration, standalone resources
 
-See the **Component Categories** sections in both [[../Twitch Docs/Index]] and [[Coverage]] for detailed breakdowns and component lists.
+See the **Component Categories** sections in both [[../Twitch Docs/Index]] and [[../Twitch Docs/Coverage]] for detailed breakdowns and component lists.
 
 ## Architecture Decisions
 
@@ -40,7 +40,7 @@ The following architectural decisions guide the categorization and documentation
 
 ## Quick Start
 
-1. Check [[Coverage]] for current documentation status and category classifications of both storage and repository components
+1. Check [[../Twitch Docs/Coverage]] for current documentation status and category classifications of both storage and repository components
 2. Review [[Tasks]] for active work items across both documentation modes
 3. Navigate via [[../Twitch Docs/Index]] Component Categories section for prioritized component access
 4. Use [[../Repos Docs/Index]] for repository-specific documentation

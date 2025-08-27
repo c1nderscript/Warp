@@ -20,13 +20,13 @@ This document serves as the canonical policy for documenting `/home/cinder/Docum
 3. **Component Documentation**: Each item gets a Component Card at `Twitch Docs/Components/<component>.md` with:
    - YAML frontmatter (status, source_path, last_scanned, tags, links)
    - Sections: Purpose, Key Files, Interfaces, Depends On, Used By, Notes
-   - Mandatory backlinks: source path, [[Coverage]], 
+   - Mandatory backlinks: source path, [[../Twitch Docs/Coverage]], 
 
 4. **Navigation**: `Twitch Docs/Index.md` as global map listing domains/subsystems with embedded Mermaid diagrams
 
-5. **Backlinking**: Obsidian-native `[[...]]` links mandatory in all directions for discoverability
+5. **Backlinking**: Obsidian-native `` links mandatory in all directions for discoverability
 
-6. **Task Management**: New discoveries → Tasks.md with [[Coverage]] links and todo status
+6. **Task Management**: New discoveries → Tasks.md with [[../Twitch Docs/Coverage]] links and todo status
 
 7. **Change Tracking**: Each action → Changelog.md entry with timestamp and relevant backlinks
 
@@ -44,7 +44,7 @@ This document serves as the canonical policy for documenting `/home/cinder/Docum
 
 - YAML frontmatter with status, source_path, last_scanned, tags, links
 - Component Cards with Purpose, Key Files, Interfaces, Depends On, Used By, Notes sections
-- Obsidian-style [[...]] backlinking throughout all documentation
+- Obsidian-style  backlinking throughout all documentation
 - Coverage tracking with Dataview-compatible tables
 - Tasks.md integration for TODO management
 - Changelog.md timestamped entries for all updates
@@ -63,7 +63,7 @@ The following ADRs are adopted as canonical policy and must be followed in all d
 - **Component Card Enhancement**: YAML frontmatter category fields mandatory per ADR-0001 requirements
 - **Index Integration**: Component Categories sections in both Twitch Docs and Repos Docs indexes must be kept current
 - **Documentation Cross-Reference**: Obsidian backlinks to ADRs maintained from both index files and component cards
-- **Task Generation**: Analysis-generated tasks must be systematically added to Tasks.md with proper [[Coverage]] backlinks
+- **Task Generation**: Analysis-generated tasks must be systematically added to Tasks.md with proper [[../Twitch Docs/Coverage]] backlinks
 
 ### Links
-[[Coverage]] | [[../Twitch Docs/Index]] | [[../Repos Docs/Index]] | [[Tasks]] | [[Changelog]] | [[docs/architecture/adr-0001-component-categorization]] | [[docs/architecture/adr-0002-disconnected-removal]]
+[[../Twitch Docs/Coverage]] | [[../Twitch Docs/Index]] | [[../Repos Docs/Index]] | [[Tasks]] | [[Changelog]] | [[docs/architecture/adr-0001-component-categorization]] | [[docs/architecture/adr-0002-disconnected-removal]]
