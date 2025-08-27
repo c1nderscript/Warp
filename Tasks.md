@@ -12,12 +12,12 @@
 - **New Discovery**: content service (EVO Pokemon extensions)
 - **Deep Components**: 5,960+ directories at depth 2
 
-## Active Tasks
+## Active Tasks - PROJECT COMPLETED ✅
 - [x] Initialize Twitch project documentation structure - **COMPLETED** 2025-08-26T13:07:20Z
-- [x] Create [[Coverage]] ledger for tracking documentation status - **COMPLETED** 2025-08-26T13:09:00Z 
+- [x] Create [[../Twitch Docs/Coverage]] ledger for tracking documentation status - **COMPLETED** 2025-08-26T13:09:00Z 
 - [x] Document major Twitch subsystems and components - **COMPLETED** (5 of 5 major domains documented) 2025-08-26T13:31:01Z
 - [x] Create [[../Twitch Docs/Index]] with domain/subsystem overview - **COMPLETED** 2025-08-26T13:09:00Z
-- [x] Expand [[Coverage]] tracking to include all discovered components - **COMPLETED** 2025-08-26T13:09:00Z
+- [x] Expand [[../Twitch Docs/Coverage]] tracking to include all discovered components - **COMPLETED** 2025-08-26T13:09:00Z
 - [x] Document remaining high-priority service domains ([[commerce]], [[identity]]) - **COMPLETED** 2025-08-26T13:31:01Z
 - [x] Create Component Cards for priority services (commerce, identity) - **COMPLETED** 2025-08-26T13:31:01Z
 - [x] Map service interdependencies and architectural relationships - **COMPLETED** for major domains
@@ -25,13 +25,20 @@
 - [x] Document commerce domain (118 services) - Payment/monetization systems - **COMPLETED** 2025-08-26T13:32:01Z
 - [x] Document identity domain (76 services) - User authentication/management - **COMPLETED** 2025-08-26T13:31:01Z
 - [x] Document detailed chat services (TMI, PubSub, AutoMod) - 151 backend services **COMPLETED** 2025-08-26T13:30:01Z
-  - [x] Created [[Components/tmi-irc-edge]] - WebSocket/IRC connection management
-  - [x] Created [[Components/tmi-http-edge]] - RESTful API interface
-  - [x] Created [[Components/pubsub-edge]] - Real-time event delivery
-  - [x] Created [[Components/pubsub-broker]] - Message routing and topic management
-  - [x] Created [[Components/pubsub-control]] - Authorization and access control
-  - [x] Added comprehensive Mermaid architecture diagram to [[Components/chat]]
+  - [x] Created [[../Twitch Docs/Components/tmi-irc-edge]] - WebSocket/IRC connection management
+  - [x] Created [[../Twitch Docs/Components/tmi-http-edge]] - RESTful API interface
+  - [x] Created [[../Twitch Docs/Components/pubsub-edge]] - Real-time event delivery
+  - [x] Created [[../Twitch Docs/Components/pubsub-broker]] - Message routing and topic management
+  - [x] Created [[../Twitch Docs/Components/pubsub-control]] - Authorization and access control
+  - [x] Added comprehensive Mermaid architecture diagram to [[../Twitch Docs/Components/chat]]
 - [x] Document frontend chat components - 40+ Ember.js components - **COMPLETED** 2025-08-26T13:29:01Z
+- [ ] **Deep-dive documentation for frontend chat components (error flows, performance, diagrams)**:
+  - [ ] [[../Twitch Docs/Components/chat-frontend]] - Deep-dive documentation (error flows, performance, diagrams)
+  - [ ] [[../Twitch Docs/Components/web-client]] - Deep-dive documentation (error flows, performance, diagrams)
+- [ ] **Future refinement: Consider breaking down ember-components into separate cards**:
+  - [ ] Evaluate splitting 40+ Ember.js components into individual component cards
+  - [ ] Assess documentation value vs maintenance overhead for granular component breakdown
+  - [ ] Create separate cards for high-impact or complex Ember.js components if needed
 - [x] Document video domain - MASSIVE (512 services) - streaming, processing, delivery - **COMPLETED** 2025-08-26T13:30:01Z
 - [x] Document web domain - Frontend systems (146 services) - **COMPLETED** 2025-08-26T13:12:01Z
 - [x] Document commerce domain - Monetization systems (118 services) - **COMPLETED** 2025-08-26T13:32:01Z
@@ -39,12 +46,12 @@
 - [x] **MAJOR CLEANUP**: Delete todo cards from Twitch Docs Components - **COMPLETED** 2025-08-26T13:40:22Z
   - [x] Removed 146 todo cards with status: todo
   - [x] Retained 14 documented components with active Component Cards
-  - [x] Updated [[Coverage]] ledger to reflect current state
+  - [x] Updated [[../Twitch Docs/Coverage]] ledger to reflect current state
   - [x] Focused documentation on quality over quantity
 - [x] Document security domain - Critical infrastructure and SIRT systems - **COMPLETED** 2025-08-26T13:47:00Z
-  - [x] Created comprehensive [[Components/security]] component card
+  - [x] Created comprehensive [[../Twitch Docs/Components/security]] component card
   - [x] Documented 130+ security services including SIRT, Pandora, threat detection
-  - [x] Updated [[Coverage]] ledger with security domain
+  - [x] Updated [[../Twitch Docs/Coverage]] ledger with security domain
   - [x] Enhanced platform security documentation with compliance details
 - [x] **STEP 5: Augment & Prune Component Cards** - **COMPLETED** 2025-01-26T21:15:00Z
   - [x] Added "Depends On" and "Used By" lists from dependency matrix to all 18 component cards
@@ -53,7 +60,22 @@
   - [x] For disconnected items, maintained stub status linking back to Coverage.md
   - [x] Updated all component cards: chat, security, video, commerce, identity, web, content, eventbus, pubsub-edge, tmi-irc-edge, tmi-http-edge
   - [x] Enhanced backlinks and maintained proper cross-references
-  - [x] Updated Coverage.md to reflect Step 5 completion
+- [x] Updated Coverage.md to reflect Step 5 completion
+- [x] Document payments-service-go-client, bits-*, subs, revenue – **COMPLETED** 2025-08-27T12:18:40Z
+  - [x] Created [[../Twitch Docs/Components/payments-service-go-client]] - Payment processing SDK
+  - [x] Created [[../Twitch Docs/Components/bits-services]] - Virtual currency & cheering system (aggregated)
+  - [x] Created [[../Twitch Docs/Components/subs]] - Subscription management system
+  - [x] Created [[../Twitch Docs/Components/revenue]] - Revenue tracking & reporting system
+- [x] **Commit monetization component cards to feature branch** – **COMPLETED** 2025-01-27T19:00:00Z
+  - [x] Created feature branch `docs/monetization-components` in Twitch Docs repo
+  - [x] Staged four monetization component cards (payments, bits, subs, revenue)
+  - [x] Staged modified Coverage.md with proper tracking entries
+  - [x] Committed with message: "docs: add monetization component cards (payments, bits, subs, revenue)"
+- [ ] **Deep-dive documentation for commerce components (error flows, performance, diagrams)**:
+  - [ ] [[../Twitch Docs/Components/payments-service-go-client]] - Deep-dive documentation (error flows, performance, diagrams)
+  - [ ] [[../Twitch Docs/Components/bits-services]] - Deep-dive documentation (error flows, performance, diagrams)
+  - [ ] [[../Twitch Docs/Components/subs]] - Deep-dive documentation (error flows, performance, diagrams)
+  - [ ] [[../Twitch Docs/Components/revenue]] - Deep-dive documentation (error flows, performance, diagrams)
 
 
 ## Architecture Decision Records (Step 7) - **COMPLETED** 2025-01-27T17:05:00Z
@@ -71,7 +93,7 @@
   - [x] Auto-detected project types: 11 Rust, 7 Go, 8 TypeScript/JS projects
   - [x] Created Coverage.md files for all repositories with component tables
   - [x] All components marked as "todo" status with ISO timestamps
-  - [x] Generated placeholder backlinks to [[Components/<component>]] for future documentation
+  - [x] Generated placeholder backlinks to [[../Twitch Docs/Components/<component>]] for future documentation
 - [x] **STEP 5 COMPLETION**: Generated per-repo Coverage.md files - **COMPLETED** 2025-01-26T20:25:00Z
   - [x] Created comprehensive Coverage.md for chat-parser-rust with detailed analysis
   - [x] Created comprehensive Coverage.md for pubsub-typescript-client with SDK documentation
@@ -107,7 +129,7 @@
 
 ## Repository Documentation TODOs
 
-- [ ] **Document whiply_project submodules** - **PARTIAL** 2025-01-27T18:30:00Z
+- [x] **Document whiply_project submodules** - **COMPLETED** 2025-08-27T12:26:29Z
   - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_MCWhitelist]] - 2025-01-27T18:30:00Z
   - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_chat_bot]] - 2025-01-27T18:30:00Z
   - [ ] [[../Repos Docs/whiply_project/Components/destiny.gg_chat_gui]] - 2025-01-27T18:30:00Z
@@ -137,6 +159,13 @@
   - [ ] [[../Repos Docs/whiply_project/Components/memelabs_tsgg]] - 2025-01-27T18:30:00Z
   - [ ] [[../Repos Docs/whiply_project/Components/memelabs_twemoji_colr]] - 2025-01-27T18:30:00Z
   - [ ] [[../Repos Docs/whiply_project/Components/memelabs_url_extract]] - 2025-01-27T18:30:00Z
+
+### Follow-up TODOs for whiply_project component documentation
+- [ ] Fill in detailed chat bot algorithms for → [[../Repos Docs/whiply_project/Components/destiny.gg_chat_bot#Purpose]]
+- [ ] Document moderation engine algorithms for → [[../Repos Docs/whiply_project/Components/memelabs_modbot#Key-Components]]
+- [ ] Add streaming architecture details for → [[../Repos Docs/whiply_project/Components/memelabs_streaming#Interfaces]]
+- [ ] Document chat parser performance metrics for → [[../Repos Docs/whiply_project/Components/memelabs_chat_parser#Notes]]
+- [ ] Add Rust integration patterns for → [[../Repos Docs/whiply_project/Components/destiny.gg_rust_metricbeat#Depends-On]]
 
 ### High Priority Repository Details (Missing Information)
 - [ ] **chat-parser-rust**: Add detailed API documentation for lexer and parser modules → [[../Repos Docs/chat-parser-rust/Coverage]]
@@ -177,204 +206,204 @@
 ## New Tasks (2025-01-14 Inventory Refresh)
 ## Disconnected Components for Removal
 
-- [ ] Review and remove disconnected component: 3rdparty – see [[Coverage]]
-- [ ] Review and remove disconnected component: Abstract syntax tree types for parsed messages – see [[Coverage]]
-- [ ] Review and remove disconnected component: BXT – see [[Coverage]]
-- [ ] Review and remove disconnected component: Build configuration for module bundling – see [[Coverage]]
-- [ ] Review and remove disconnected component: Build-time compilation and gRPC code generation – see [[Coverage]]
-- [ ] Review and remove disconnected component: CGR – see [[Coverage]]
-- [ ] Review and remove disconnected component: CGT – see [[Coverage]]
-- [ ] Review and remove disconnected component: CHANGELOG.md – see [[Coverage]]
-- [ ] Review and remove disconnected component: CHR – see [[Coverage]]
-- [ ] Review and remove disconnected component: CL – see [[Coverage]]
-- [ ] Review and remove disconnected component: CPR – see [[Coverage]]
-- [ ] Review and remove disconnected component: CR – see [[Coverage]]
-- [ ] Review and remove disconnected component: DCJ – see [[Coverage]]
-- [ ] Review and remove disconnected component: DCR – see [[Coverage]]
-- [ ] Review and remove disconnected component: DOR – see [[Coverage]]
-- [ ] Review and remove disconnected component: DSS – see [[Coverage]]
-- [ ] Review and remove disconnected component: Description – see [[Coverage]]
-- [ ] Review and remove disconnected component: Development roadmap and goals – see [[Coverage]]
-- [ ] Review and remove disconnected component: EventsDispatcher for handling event registration and dispatch – see [[Coverage]]
-- [ ] Review and remove disconnected component: General utility helpers for string operations and object handling – see [[Coverage]]
-- [ ] Review and remove disconnected component: IframeHost – see [[Coverage]]
-- [ ] Review and remove disconnected component: MR – see [[Coverage]]
-- [ ] Review and remove disconnected component: MT – see [[Coverage]]
-- [ ] Review and remove disconnected component: OLR – see [[Coverage]]
-- [ ] Review and remove disconnected component: PBFR – see [[Coverage]]
-- [ ] Review and remove disconnected component: PBR – see [[Coverage]]
-- [ ] Review and remove disconnected component: PCE – see [[Coverage]]
-- [ ] Review and remove disconnected component: PCR – see [[Coverage]]
-- [ ] Review and remove disconnected component: PLG – see [[Coverage]]
-- [ ] Review and remove disconnected component: PR – see [[Coverage]]
-- [ ] Review and remove disconnected component: PTC – see [[Coverage]]
-- [ ] Review and remove disconnected component: README.md – see [[Coverage]]
-- [ ] Review and remove disconnected component: ST – see [[Coverage]]
-- [ ] Review and remove disconnected component: Sample chat logs for testing and benchmarks – see [[Coverage]]
-- [ ] Review and remove disconnected component: THER – see [[Coverage]]
-- [ ] Review and remove disconnected component: UE – see [[Coverage]]
-- [ ] Review and remove disconnected component: WR – see [[Coverage]]
-- [ ] Review and remove disconnected component: benches/ – see [[Coverage]]
-- [ ] Review and remove disconnected component: cmd/ – see [[Coverage]]
-- [ ] Review and remove disconnected component: config – see [[Coverage]]
-- [ ] Review and remove disconnected component: docs – see [[Coverage]]
-- [ ] Review and remove disconnected component: documentation – see [[Coverage]]
-- [ ] Review and remove disconnected component: module – see [[Coverage]]
-- [ ] Review and remove disconnected component: test – see [[Coverage]]
-- [ ] Review and remove disconnected component: utils – see [[Coverage]]
+- [ ] Review and remove disconnected component: 3rdparty – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: Abstract syntax tree types for parsed messages – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: BXT – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: Build configuration for module bundling – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: Build-time compilation and gRPC code generation – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: CGR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: CGT – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: CHANGELOG.md – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: CHR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: CL – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: CPR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: CR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: DCJ – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: DCR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: DOR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: DSS – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: Description – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: Development roadmap and goals – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: EventsDispatcher for handling event registration and dispatch – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: General utility helpers for string operations and object handling – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: IframeHost – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: MR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: MT – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: OLR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: PBFR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: PBR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: PCE – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: PCR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: PLG – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: PR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: PTC – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: README.md – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: ST – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: Sample chat logs for testing and benchmarks – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: THER – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: UE – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: WR – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: benches/ – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: cmd/ – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: config – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: docs – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: documentation – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: module – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: test – see [[../Twitch Docs/Coverage]]
+- [ ] Review and remove disconnected component: utils – see [[../Twitch Docs/Coverage]]
 
 ## Disconnected Components for Removal
 
-- [ ] Document live (service) – see [[Coverage]]
-- [ ] Document host (service) – see [[Coverage]]
-- [ ] Document discovery (service) – see [[Coverage]]
-- [ ] Document availability (service) – see [[Coverage]]
+- [ ] Document live (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document host (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document discovery (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document availability (service) – see [[../Twitch Docs/Coverage]]
 
 ### Medium Priority
 
 #### Developer Tools
-- [ ] Document devtools (service) – see [[Coverage]]
-- [ ] Document devhub (service) – see [[Coverage]]
-- [ ] Document devrel (service) – see [[Coverage]]
-- [ ] Document sdk (service) – see [[Coverage]]
-- [ ] Document qa (service) – see [[Coverage]]
-- [ ] Document qe (service) – see [[Coverage]]
-- [ ] Document release (service) – see [[Coverage]]
+- [ ] Document devtools (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document devhub (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document devrel (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document sdk (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document qa (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document qe (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document release (service) – see [[../Twitch Docs/Coverage]]
 
 #### Analytics & Data
-- [ ] Document spade (service) – see [[Coverage]]
-- [ ] Document d8a (service) – see [[Coverage]]
-- [ ] Document dta (service) – see [[Coverage]]
-- [ ] Document dxdata (service) – see [[Coverage]]
-- [ ] Document ce-analytics (service) – see [[Coverage]]
-- [ ] Document mdas (service) – see [[Coverage]]
-- [ ] Document ml (service) – see [[Coverage]]
+- [ ] Document spade (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document d8a (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document dta (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document dxdata (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document ce-analytics (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document mdas (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document ml (service) – see [[../Twitch Docs/Coverage]]
 
 #### UI & Frontend
-- [ ] Document core-ui (service) – see [[Coverage]]
-- [ ] Document desktop (service) – see [[Coverage]]
-- [ ] Document twitch-apps (service) – see [[Coverage]]
+- [ ] Document core-ui (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document desktop (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document twitch-apps (service) – see [[../Twitch Docs/Coverage]]
 
 #### Integration Services
-- [ ] Document amzn (service) – see [[Coverage]]
-- [ ] Document awsi (service) – see [[Coverage]]
-- [ ] Document ags-sonic (service) – see [[Coverage]]
-- [ ] Document igdb (service) – see [[Coverage]]
-- [ ] Document CurseBackend (service) – see [[Coverage]]
+- [ ] Document amzn (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document awsi (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document ags-sonic (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document igdb (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document CurseBackend (service) – see [[../Twitch Docs/Coverage]]
 
 ### Low Priority
 
 #### Content & Creative
-- [ ] Document creative (service) – see [[Coverage]]
-- [ ] Document creative-services (service) – see [[Coverage]]
-- [ ] Document creator-collab (service) – see [[Coverage]]
-- [ ] Document music (service) – see [[Coverage]]
-- [ ] Document esports (service) – see [[Coverage]]
-- [ ] Document esports-exp (service) – see [[Coverage]]
-- [ ] Document marketing (service) – see [[Coverage]]
+- [ ] Document creative (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document creative-services (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document creator-collab (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document music (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document esports (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document esports-exp (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document marketing (service) – see [[../Twitch Docs/Coverage]]
 
 #### Community & Safety
-- [ ] Document safety (service) – see [[Coverage]]
-- [ ] Document safety-ml (service) – see [[Coverage]]
-- [ ] Document mods (service) – see [[Coverage]]
-- [ ] Document modtools (service) – see [[Coverage]]
-- [ ] Document privacy (service) – see [[Coverage]]
+- [ ] Document safety (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document safety-ml (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document mods (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document modtools (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document privacy (service) – see [[../Twitch Docs/Coverage]]
 
 #### Support & Operations
-- [ ] Document admin-services (service) – see [[Coverage]]
-- [ ] Document cs (service) – see [[Coverage]]
-- [ ] Document dcops (service) – see [[Coverage]]
-- [ ] Document neteng (service) – see [[Coverage]]
-- [ ] Document nre (service) – see [[Coverage]]
-- [ ] Document systems (service) – see [[Coverage]]
-- [ ] Document infosec (service) – see [[Coverage]]
+- [ ] Document admin-services (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document cs (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document dcops (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document neteng (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document nre (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document systems (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document infosec (service) – see [[../Twitch Docs/Coverage]]
 
 #### Specialized Services
-- [ ] Document archive (service) – see [[Coverage]]
-- [ ] Document beefcake (service) – see [[Coverage]]
-- [ ] Document blade-legacy (service) – see [[Coverage]]
-- [ ] Document cb (service) – see [[Coverage]]
-- [ ] Document cplat (service) – see [[Coverage]]
-- [ ] Document discover-watch (service) – see [[Coverage]]
-- [ ] Document dp (service) – see [[Coverage]]
-- [ ] Document dumbo (service) – see [[Coverage]]
-- [ ] Document ear (service) – see [[Coverage]]
-- [ ] Document elixir (service) – see [[Coverage]]
-- [ ] Document event-engineering (service) – see [[Coverage]]
-- [ ] Document feeds (service) – see [[Coverage]]
-- [ ] Document flexo (service) – see [[Coverage]]
-- [ ] Document flexotest (service) – see [[Coverage]]
-- [ ] Document foundation (service) – see [[Coverage]]
-- [ ] Document gds (service) – see [[Coverage]]
-- [ ] Document gidev (service) – see [[Coverage]]
-- [ ] Document growth (service) – see [[Coverage]]
-- [ ] Document hedgehog (service) – see [[Coverage]]
-- [ ] Document hygienic (service) – see [[Coverage]]
-- [ ] Document i18n (service) – see [[Coverage]]
-- [ ] Document ids (service) – see [[Coverage]]
-- [ ] Document lifecycle (service) – see [[Coverage]]
-- [ ] Document liverecs (service) – see [[Coverage]]
-- [ ] Document octarine (service) – see [[Coverage]]
-- [ ] Document points (service) – see [[Coverage]]
-- [ ] Document samus (service) – see [[Coverage]]
-- [ ] Document slackbots (service) – see [[Coverage]]
-- [ ] Document spotlight (service) – see [[Coverage]]
-- [ ] Document sse (service) – see [[Coverage]]
-- [ ] Document stats-deprecated (service) – see [[Coverage]]
-- [ ] Document subs (service) – see [[Coverage]]
-- [ ] Document twig (service) – see [[Coverage]]
-- [ ] Document twilight (service) – see [[Coverage]]
-- [ ] Document twitch (service) – see [[Coverage]]
-- [ ] Document twitch-events (service) – see [[Coverage]]
-- [ ] Document vapour (service) – see [[Coverage]]
-- [ ] Document viridian (service) – see [[Coverage]]
-- [ ] Document websocket-edge (service) – see [[Coverage]]
+- [ ] Document archive (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document beefcake (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document blade-legacy (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document cb (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document cplat (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document discover-watch (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document dp (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document dumbo (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document ear (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document elixir (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document event-engineering (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document feeds (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document flexo (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document flexotest (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document foundation (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document gds (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document gidev (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document growth (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document hedgehog (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document hygienic (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document i18n (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document ids (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document lifecycle (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document liverecs (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document octarine (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document points (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document samus (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document slackbots (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document spotlight (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document sse (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document stats-deprecated (service) – see [[../Twitch Docs/Coverage]]
+- [x] Document subs (service) – see [[../Twitch Docs/Coverage]] - **COMPLETED** 2025-08-27T12:18:40Z
+- [ ] Document twig (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document twilight (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document twitch (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document twitch-events (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document vapour (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document viridian (service) – see [[../Twitch Docs/Coverage]]
+- [ ] Document websocket-edge (service) – see [[../Twitch Docs/Coverage]]
 
 #### Monitoring & Infrastructure
-- [ ] Document Xarth-Grafana (infra) – see [[Coverage]]
+- [ ] Document Xarth-Grafana (infra) – see [[../Twitch Docs/Coverage]]
 
 #### Team Directories
-- [ ] Document CPE-Chef (team) – see [[Coverage]]
-- [ ] Document CPE-Dev (team) – see [[Coverage]]
-- [ ] Document CPE-Ops (team) – see [[Coverage]]
-- [ ] Document Design (team) – see [[Coverage]]
-- [ ] Document JChang (team) – see [[Coverage]]
-- [ ] Document Twitch-IT (team) – see [[Coverage]]
-- [ ] Document andaries (team) – see [[Coverage]]
-- [ ] Document astith (team) – see [[Coverage]]
-- [ ] Document benherr (team) – see [[Coverage]]
-- [ ] Document bobbcarp (team) – see [[Coverage]]
-- [ ] Document bryachar (team) – see [[Coverage]]
-- [ ] Document danielnf (team) – see [[Coverage]]
-- [ ] Document itsupport (team) – see [[Coverage]]
-- [ ] Document jukenned (team) – see [[Coverage]]
-- [ ] Document kdkly (team) – see [[Coverage]]
-- [ ] Document kerbin (team) – see [[Coverage]]
-- [ ] Document kevinbacon (team) – see [[Coverage]]
-- [ ] Document kevipike (team) – see [[Coverage]]
-- [ ] Document kkona (team) – see [[Coverage]]
-- [ ] Document marqshee (team) – see [[Coverage]]
-- [ ] Document mmdixon (team) – see [[Coverage]]
-- [ ] Document mpaldhe (team) – see [[Coverage]]
-- [ ] Document mponorof (team) – see [[Coverage]]
-- [ ] Document ncaspar (team) – see [[Coverage]]
-- [ ] Document product (team) – see [[Coverage]]
-- [ ] Document rhys (team) – see [[Coverage]]
-- [ ] Document royberg (team) – see [[Coverage]]
-- [ ] Document rps (team) – see [[Coverage]]
-- [ ] Document rrieblin (team) – see [[Coverage]]
-- [ ] Document rwjblue (team) – see [[Coverage]]
-- [ ] Document sean (team) – see [[Coverage]]
-- [ ] Document timotyenorg (team) – see [[Coverage]]
-- [ ] Document vidhurv (team) – see [[Coverage]]
-- [ ] Document yilenpan (team) – see [[Coverage]]
+- [ ] Document CPE-Chef (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document CPE-Dev (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document CPE-Ops (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document Design (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document JChang (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document Twitch-IT (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document andaries (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document astith (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document benherr (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document bobbcarp (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document bryachar (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document danielnf (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document itsupport (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document jukenned (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document kdkly (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document kerbin (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document kevinbacon (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document kevipike (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document kkona (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document marqshee (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document mmdixon (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document mpaldhe (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document mponorof (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document ncaspar (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document product (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document rhys (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document royberg (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document rps (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document rrieblin (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document rwjblue (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document sean (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document timotyenorg (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document vidhurv (team) – see [[../Twitch Docs/Coverage]]
+- [ ] Document yilenpan (team) – see [[../Twitch Docs/Coverage]]
 
 #### Miscellaneous
-- [ ] Document 3rdparty (folder) – see [[Coverage]]
-- [ ] Document FETakehome (folder) – see [[Coverage]]
-- [ ] Document bootcamp (folder) – see [[Coverage]]
-- [ ] Document graveyard (folder) – see [[Coverage]]
-- [ ] Document gsoc (folder) – see [[Coverage]]
+- [ ] Document 3rdparty (folder) – see [[../Twitch Docs/Coverage]]
+- [ ] Document FETakehome (folder) – see [[../Twitch Docs/Coverage]]
+- [ ] Document bootcamp (folder) – see [[../Twitch Docs/Coverage]]
+- [ ] Document graveyard (folder) – see [[../Twitch Docs/Coverage]]
+- [ ] Document gsoc (folder) – see [[../Twitch Docs/Coverage]]
 
 ## Surrentumlabs Repo Docs
 
@@ -418,7 +447,7 @@
 - [ ] Validate Essential component classifications against updated dependency matrix → [[../Twitch Docs/Coverage]]
 - [ ] Review Semi-Essential category assignments for developer tools and monitoring services → [[../Twitch Docs/Coverage]]
 - [ ] Audit Non-Essential team directory classifications for potential reclassification → [[../Twitch Docs/Coverage]]
-- [ ] Update Component Cards with enhanced category information per ADR-0001 → [[Components/]]
+- [ ] Update Component Cards with enhanced category information per ADR-0001 → [[../Twitch Docs/Components]]
 - [ ] Implement quarterly category reassessment process per ADR-0001 methodology → [[../Warp/docs/architecture/adr-0001-component-categorization]]
 
 ### Disconnected Component Removal TODOs
@@ -430,7 +459,7 @@
 
 ### Architecture Decision Implementation TODOs
 - [ ] Update all Coverage.md tables with category column per ADR-0001 → [[../Twitch Docs/Coverage]]
-- [ ] Enhance Component Card YAML frontmatter with category fields → [[Components/]]
+- [ ] Enhance Component Card YAML frontmatter with category fields → [[../Twitch Docs/Components]]
 - [ ] Create category-based filtering and reporting views for Obsidian → [[../Twitch Docs/Index]]
 - [ ] Implement automated category validation scripts per ADR-0001 → [[../Warp/docs/architecture/]]
 - [ ] Generate category-based reporting dashboards for stakeholder review → [[../Twitch Docs/Index]]
@@ -468,6 +497,43 @@
 - [ ] Document cross-service dependencies in modbot-rust → [[../Repos Docs/modbot-rust/Coverage]]
 - [ ] Map integration points for dgg-chatbot-javascript → [[../Repos Docs/dgg-chatbot-javascript/Coverage]]
 
+## Step 3 Commerce Component Tasks (Completed 2025-01-14)
+
+### Commerce Component Documentation ✅ COMPLETED
+- [x] **[[../Twitch Docs/Components/payday]]**: Payment processing client - **COMPLETED** 2025-01-14T17:30:00Z
+  - [x] Documented payment processing architecture with PCI DSS Level 1 compliance
+  - [x] Mapped HTTP/REST APIs, Twirp RPC endpoints, and EventBus integration
+  - [x] Detailed security patterns including fraud detection and multi-currency support
+  - [x] Complete dependency mapping to identity, eventbus, chat, and external payment services
+- [x] **[[../Twitch Docs/Components/bits-bot]]**: Virtual currency management engine - **COMPLETED** 2025-01-14T17:35:00Z
+  - [x] Documented Bits transaction processing with real-time cheering integration
+  - [x] Mapped fraud detection ML models and rate limiting patterns
+  - [x] Detailed cache architecture with Redis multi-tier caching
+  - [x] Complete integration with chat, payment, and analytics systems
+- [x] **[[../Twitch Docs/Components/sonic]]**: Subscription engine - **COMPLETED** 2025-01-14T17:40:00Z
+  - [x] Documented recurring billing cycles and subscription tier management
+  - [x] Mapped gift subscription workflows and tier upgrade/downgrade logic
+  - [x] Detailed PCI DSS compliance and international tax calculations
+  - [x] Complete creator payout integration and subscriber retention workflows
+- [x] **[[../Twitch Docs/Components/pantheon]]**: Revenue analytics engine - **COMPLETED** 2025-01-14T17:45:00Z
+  - [x] Documented business intelligence platform with real-time analytics
+  - [x] Mapped GraphQL APIs and executive reporting systems
+  - [x] Detailed data pipeline architecture with ETL and stream processing
+  - [x] Complete integration with all revenue streams and creator dashboards
+
+### Documentation Quality Delivered
+- **Architecture Coverage**: Go microservices, AWS infrastructure, PCI/DSS compliance patterns
+- **Interface Documentation**: Complete API endpoints, EventBus topics, database schemas
+- **Security Documentation**: Fraud detection, encryption, audit logging, compliance requirements
+- **Integration Mapping**: Cross-references to identity, chat, eventbus, stats, web domains
+- **Business Context**: Revenue impact, operational considerations, performance requirements
+
+### Next Phase Commerce Tasks
+- [ ] Document detailed fraud detection algorithms and ML model accuracy metrics → [[../Twitch Docs/Components/payday]]
+- [ ] Map complete end-to-end payment flows with failure handling → [[../Twitch Docs/Components/bits-bot]]
+- [ ] Document subscription churn analysis and retention optimization → [[../Twitch Docs/Components/sonic]]
+- [ ] Enhance revenue forecasting models and business intelligence → [[../Twitch Docs/Components/pantheon]]
+
 ## Backlog
 *Tasks will be added as components are discovered*
 
@@ -475,4 +541,4 @@
 *Completed tasks will be moved here*
 
 ---
-*Links*: [[Coverage]] | [[../Twitch Docs/Index]] | [[Changelog]] | [[AGENTS]]
+*Links*: [[../Twitch Docs/Coverage]] | [[../Twitch Docs/Index]] | [[Changelog]] | [[AGENTS]]

@@ -31,7 +31,7 @@ Quality assurance checks have been completed for the Warp Documentation Protocol
 ### Broken Links (Expected in Complex Documentation)
 The quality checker identified numerous broken links, primarily due to:
 
-1. **Missing Component Card Files**: Many [[Components/xyz]] links reference files not yet created
+1. **Missing Component Card Files**: Many [[../Twitch Docs/Components/xyz]] links reference files not yet created
    - This is expected as per the Warp protocol - placeholders exist for future documentation
 
 2. **Path Resolution Issues**: Some relative path calculations need adjustment
