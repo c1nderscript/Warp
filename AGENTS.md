@@ -66,4 +66,4 @@ The following ADRs are adopted as canonical policy and must be followed in all d
 - **Task Generation**: Analysis-generated tasks must be systematically added to Tasks.md with proper [[../Twitch Docs/Coverage]] backlinks
 
 ### Links
-[[../Twitch Docs/Coverage]] | [[../Twitch Docs/Index]] | [[../Repos Docs/Index]] | [[Tasks]] | [[Changelog]] | [[docs/architecture/adr-0001-component-categorization]] | [[docs/architecture/adr-0002-disconnected-removal]]
+[[Documentation-Homepage]] | [[../Twitch Docs/Coverage]] | [[../Twitch Docs/Index]] | [[../Repos Docs/Index]] | [[Tasks]] | [[Changelog]] | [[docs/architecture/adr-0001-component-categorization]] | [[docs/architecture/adr-0002-disconnected-removal]]
